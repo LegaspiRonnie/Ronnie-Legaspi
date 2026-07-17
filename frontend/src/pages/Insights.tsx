@@ -33,13 +33,13 @@ export default function Insights() {
                 <motion.div whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300, damping: 24 }}>
                   <Link
                     to={`/insights/${post.slug}`}
-                    className="group block bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900"
+                    className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900"
                   >
                     <div className="h-40 overflow-hidden">
                       {post.cover_image_url ? (
                         <img src={post.cover_image_url} alt={post.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                       ) : (
-                        <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-gray-900"></div>
+                        <div className="w-full h-full bg-linear-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-gray-900"></div>
                       )}
                     </div>
                     <div className="p-5 flex-1 flex flex-col">

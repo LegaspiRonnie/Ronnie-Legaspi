@@ -33,7 +33,7 @@ export default function Hero() {
       id="home"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300 min-h-[100svh] flex items-center"
+      className="relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300 min-h-svh flex items-center"
     >
       {/* Ambient gradient backdrop with parallax drift */}
       <motion.div
@@ -104,7 +104,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: EASE, delay: 0.15 }}
           >
             <div className="absolute inset-0 rounded-full bg-blue-500/20 dark:bg-blue-400/20 blur-2xl animate-pulse" />
-            <div className="absolute -inset-6 -z-10 rounded-full bg-gradient-to-br from-blue-200/30 to-transparent dark:from-blue-800/20 blur-3xl animate-float-slow" />
+            <div className="absolute -inset-6 -z-10 rounded-full bg-linear-to-br from-blue-200/30 to-transparent dark:from-blue-800/20 blur-3xl animate-float-slow" />
             <div className="absolute -inset-3 rounded-full border-2 border-blue-100 dark:border-blue-900/60 animate-pulse" />
             <motion.img
               src={profilePhotoUrl}
