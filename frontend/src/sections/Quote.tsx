@@ -28,7 +28,7 @@ export default function Quote() {
   }, []);
 
   return (
-    <section className="py-20 bg-white dark:bg-gray-900/40 transition-colors duration-300">
+    <section className="py-20 bg-white dark:bg-blue-950/40 transition-colors duration-300">
       <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
         <Reveal effect="fade">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-8">[ words to code by ]</p>
@@ -58,7 +58,7 @@ export default function Quote() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           onClick={next}
-          className="mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium hover:bg-white dark:hover:bg-gray-950 transition-colors duration-300"
+          className="mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium hover:bg-white dark:hover:bg-blue-950 transition-colors duration-300"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -69,5 +69,7 @@ export default function Quote() {
     </section>
   );
 }
+
+
 
 

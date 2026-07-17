@@ -26,7 +26,7 @@ export default function VideoShowcase() {
   }, []);
 
   return (
-    <section id="video-showcase" ref={sectionRef} className="py-20 bg-white dark:bg-gray-950 transition-colors duration-300">
+    <section id="video-showcase" ref={sectionRef} className="py-20 bg-white dark:bg-blue-950 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <Reveal className="max-w-xl mb-14">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ demo reel ]</p>
@@ -48,7 +48,7 @@ export default function VideoShowcase() {
                 allowFullScreen
               />
             ) : (
-              <div className="w-full h-full bg-white dark:bg-gray-950 flex items-center justify-center">
+              <div className="w-full h-full bg-white dark:bg-blue-950 flex items-center justify-center">
                 <svg className="w-16 h-16 text-blue-700 dark:text-blue-400 transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>
@@ -60,5 +60,7 @@ export default function VideoShowcase() {
     </section>
   );
 }
+
+
 
 

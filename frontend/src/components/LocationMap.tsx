@@ -80,3 +80,5 @@ export default function LocationMap({ coordinates, label }: LocationMapProps) {
 }
 
 
+
+

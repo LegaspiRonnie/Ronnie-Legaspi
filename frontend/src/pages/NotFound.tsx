@@ -6,7 +6,7 @@ export default function NotFound() {
   usePageTitle('Page not found — Ronnie Legaspi');
 
   return (
-    <section className="min-h-[60vh] flex items-center justify-center bg-white dark:bg-gray-950 transition-colors duration-300">
+    <section className="min-h-[60vh] flex items-center justify-center bg-white dark:bg-blue-950 transition-colors duration-300">
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,5 +30,7 @@ export default function NotFound() {
     </section>
   );
 }
+
+
 
 

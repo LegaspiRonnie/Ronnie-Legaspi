@@ -13,7 +13,7 @@ function Entry({ entry, isLast, filledDot }: EntryProps) {
     <StaggerItem effect="left" className={`relative ${isLast ? '' : 'pb-8'}`}>
       <div
         className={`absolute -left-6 top-1 w-3.5 h-3.5 rounded-full ${
-          filledDot ? 'bg-blue-700 border-2 border-white dark:border-gray-950' : 'border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950'
+          filledDot ? 'bg-blue-700 border-2 border-white dark:border-gray-950' : 'border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-blue-950'
         }`}
       ></div>
       {entry.period_label && <p className="text-xs text-gray-400 dark:text-gray-500 mb-0.5">{entry.period_label}</p>}
@@ -39,7 +39,7 @@ export default function Experience() {
   const otherEntries = experience.filter((e) => ['education', 'note'].includes(e.type));
 
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-950 transition-colors duration-300">
+    <section id="experience" className="py-20 bg-white dark:bg-blue-950 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <Reveal className="max-w-xl mb-14">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ experience ]</p>
@@ -48,14 +48,14 @@ export default function Experience() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <Stagger stagger={0.15} className="relative pl-6">
-            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-gray-200 dark:bg-gray-950"></div>
+            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-gray-200 dark:bg-blue-950"></div>
             {workEntries.map((entry, i) => (
               <Entry key={entry.id} entry={entry} isLast={i === workEntries.length - 1} filledDot />
             ))}
           </Stagger>
 
           <Stagger stagger={0.15} className="relative pl-6">
-            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-gray-200 dark:bg-gray-950"></div>
+            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-gray-200 dark:bg-blue-950"></div>
             {otherEntries.map((entry, i) => (
               <Entry key={entry.id} entry={entry} isLast={i === otherEntries.length - 1} filledDot={entry.type === 'education'} />
             ))}
@@ -65,5 +65,7 @@ export default function Experience() {
     </section>
   );
 }
+
+
 
 

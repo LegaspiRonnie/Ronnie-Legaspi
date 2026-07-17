@@ -56,7 +56,7 @@ function PageTransition({ children }: { children: ReactNode }) {
 }
 
 function PageLoader() {
-  return <div className="min-h-screen bg-white dark:bg-gray-950" />;
+  return <div className="min-h-screen bg-white dark:bg-blue-950" />;
 }
 
 export default function App() {
@@ -97,5 +97,7 @@ export default function App() {
     </UnderConstructionProvider>
   );
 }
+
+
 
 

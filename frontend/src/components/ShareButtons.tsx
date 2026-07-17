@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
 const btnClass =
-  'inline-flex items-center justify-center w-9 h-9 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-950 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300';
+  'inline-flex items-center justify-center w-9 h-9 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-blue-950 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300';
 
 interface ShareButtonsProps {
   url: string;
@@ -72,5 +72,7 @@ export default function ShareButtons({ url, title = '' }: ShareButtonsProps) {
     </div>
   );
 }
+
+
 
 
