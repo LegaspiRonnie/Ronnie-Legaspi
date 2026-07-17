@@ -1,0 +1,161 @@
+/* ============================================================
+   Small hand-written CSS that isn't worth expressing as a Tailwind
+   utility: ambient loops (marquee, float), page-load fades, the
+   scrollbar/selection/focus treatment, and a global easing override.
+   Scroll-triggered and hover animations live in React via Framer
+   Motion (motion/react) — see components/Reveal.tsx.
+   ============================================================ */
+
+/* Premium "expo-out" easing applied to every element using a Tailwind
+   transition-* utility (or a bare <a>/<button>), so hovers and state
+   changes that stay CSS-driven share the same buttery feel as the
+   Framer Motion animations elsewhere on the site. */
+a,
+button,
+[role='button'],
+.transition-all,
+.transition-colors,
+.transition-transform,
+.transition-opacity,
+.transition-shadow {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---------- Ambient motion ---------- */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Seamless logo-cloud marquee — the row is rendered twice back to back,
+   so a -50% translate loops without a visible seam. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 26s linear infinite;
+  will-change: transform;
+}
+
+/* ---------- Page-load entrance (modals, lightboxes, 404) ---------- */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-page-in {
+  animation: page-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ---------- Accessibility: respect reduced-motion for the plain-CSS bits ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-float-slow,
+  .animate-fade-in,
+  .animate-page-in,
+  .animate-pulse {
+    animation: none !important;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Refined scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.35);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.55);
+  background-clip: padding-box;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.35) transparent;
+}
+
+/* ---------- Selection & focus ---------- */
+::selection {
+  background: rgba(29, 78, 216, 0.22);
+  color: inherit;
+}
+:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Premium film-grain overlay ----------
+   A very subtle animated noise texture on top of the whole page — the kind
+   of finishing layer that agencies like linguardlabs use to give flat
+   digital surfaces some tactile depth. Applied via ::before on <body> so
+   it doesn't create a stacking-context problem on interactive elements. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 180px 180px;
+}
+.dark body::before {
+  opacity: 0.06;
+  mix-blend-mode: soft-light;
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before { display: none; }
+}
+
+/* Hide the native cursor on fine-pointer devices — the custom follower
+   takes over. Inputs keep their text caret via explicit override. */
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html, body { cursor: none; }
+  a, button, [role='button'], label, summary { cursor: none; }
+  input, textarea, [contenteditable='true'] { cursor: text; }
+}
