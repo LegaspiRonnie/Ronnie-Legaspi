@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Restore class-based dark mode (`.dark` on <html>) instead of Tailwind v4's
+   default media-query strategy — the app toggles this class itself and
+   persists the choice to localStorage (see main.tsx / Navbar.tsx). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    /* Lenis owns wheel/touch scrolling — native smooth-scroll fights it
+       and causes double-tweening jitter. Reduced-motion users get `auto`
+       via animations.css, and Lenis itself is skipped for them. */
+    scroll-behavior: auto;
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+@import './styles/animations.css';
