@@ -3,7 +3,7 @@ import { useUnderConstruction } from '../hooks.ts';
 export default function Pricing() {
     const underConstruction = useUnderConstruction();
   return (
-    <section id="pricing" className="py-20 bg-gray-50 dark:bg-gray-900/40 transition-colors duration-300">
+    <section id="pricing" className="py-20 bg-white dark:bg-gray-950 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-xl mb-14">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ engagement options ]</p>
