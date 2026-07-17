@@ -29,7 +29,7 @@ export default function Projects() {
       className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105 active:scale-95 ${
         activeTag === tag
           ? 'bg-blue-700 text-white shadow-md shadow-blue-700/25'
-          : 'bg-white dark:bg-blue-950 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-blue-950'
+            : 'bg-white dark:bg-blue-950 text-gray-600 dark:text-gray-400 hover:bg-white dark:hover:bg-blue-950'
       }`}
     >
       {label}

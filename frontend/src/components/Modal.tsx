@@ -42,7 +42,7 @@ export default function Modal({ id, title, maxWidth = 'md', trigger, children }:
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={() => setOpen(false)}
-              className="absolute inset-0 bg-gray-900/60 backdrop-blur-sm"
+              className="absolute inset-0 bg-blue-950/60 backdrop-blur-sm"
             />
 
             <motion.div

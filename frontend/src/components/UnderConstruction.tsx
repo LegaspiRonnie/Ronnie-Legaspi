@@ -39,7 +39,7 @@ export function UnderConstructionModal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute inset-0 bg-gray-900/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-blue-950/60 backdrop-blur-sm"
             onClick={hide}
           />
 

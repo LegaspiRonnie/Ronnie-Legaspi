@@ -48,14 +48,14 @@ export default function Experience() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <Stagger stagger={0.15} className="relative pl-6">
-            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-gray-200 dark:bg-blue-950"></div>
+            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-white dark:bg-blue-950"></div>
             {workEntries.map((entry, i) => (
               <Entry key={entry.id} entry={entry} isLast={i === workEntries.length - 1} filledDot />
             ))}
           </Stagger>
 
           <Stagger stagger={0.15} className="relative pl-6">
-            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-gray-200 dark:bg-blue-950"></div>
+            <div className="absolute left-[7px] top-1 bottom-1 w-px bg-white dark:bg-blue-950"></div>
             {otherEntries.map((entry, i) => (
               <Entry key={entry.id} entry={entry} isLast={i === otherEntries.length - 1} filledDot={entry.type === 'education'} />
             ))}
