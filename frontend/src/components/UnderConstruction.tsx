@@ -48,7 +48,7 @@ export function UnderConstructionModal() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.95 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-md rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-blue-900 shadow-2xl p-6 text-center"
+            className="relative w-full max-w-md rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 shadow-2xl p-6 text-center"
           >
             <button
               type="button"
@@ -89,4 +89,5 @@ export function UnderConstructionModal() {
     </AnimatePresence>
   );
 }
+
 

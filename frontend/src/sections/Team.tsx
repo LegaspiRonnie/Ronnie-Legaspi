@@ -3,7 +3,7 @@ import { Reveal, Stagger, StaggerItem } from '../components/Reveal.tsx';
 
 export default function Team() {
   return (
-    <section id="team" className="py-20 bg-white dark:bg-blue-900/40 transition-colors duration-300">
+    <section id="team" className="py-20 bg-white dark:bg-gray-900/40 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <Reveal className="max-w-xl mb-14">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ team ]</p>
@@ -15,7 +15,7 @@ export default function Team() {
             <motion.div
               whileHover={{ y: -8 }}
               transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-              className="bg-white dark:bg-blue-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 flex items-center gap-4 transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900"
+              className="bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 flex items-center gap-4 transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900"
             >
               <img
                 src="https://ui-avatars.com/api/?name=Ronnie%20Legaspi&size=96&background=1d4ed8&color=ffffff&bold=true"
@@ -47,4 +47,5 @@ export default function Team() {
     </section>
   );
 }
+
 

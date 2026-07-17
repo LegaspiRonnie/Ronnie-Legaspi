@@ -5,7 +5,7 @@ import { Reveal, Stagger, StaggerItem } from '../components/Reveal.tsx';
 
 export default function Samples() {
   return (
-    <section id="samples" className="py-20 bg-white dark:bg-blue-900/40 transition-colors duration-300">
+    <section id="samples" className="py-20 bg-white dark:bg-gray-900/40 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <Reveal className="max-w-xl mb-14">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ case studies ]</p>
@@ -18,7 +18,7 @@ export default function Samples() {
         <Stagger stagger={0.15} className="flex flex-col gap-6">
           {samples.map((sample) => (
             <StaggerItem key={sample.slug} effect="right">
-              <div className="bg-white dark:bg-blue-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900">
+              <div className="bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900">
                 <div className="flex flex-wrap items-start justify-between gap-3 mb-5">
                   <div>
                     <h3 className="font-medium text-gray-900 dark:text-white mb-1">{sample.title}</h3>
@@ -47,4 +47,5 @@ export default function Samples() {
     </section>
   );
 }
+
 

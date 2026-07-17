@@ -22,7 +22,7 @@ export default function LogoCloud() {
   const logos = [...logoStack, ...logoStack];
 
   return (
-    <section className="py-20 bg-white dark:bg-blue-900 overflow-hidden">
+    <section className="py-20 bg-white dark:bg-gray-950 overflow-hidden">
       <Reveal effect="fade" className="relative overflow-hidden">
         {/* Left Fade */}
         <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 sm:w-28 bg-gradient-to-r from-white dark:from-gray-950 to-transparent" />
@@ -60,4 +60,5 @@ export default function LogoCloud() {
     </section>
   );
 }
+
 

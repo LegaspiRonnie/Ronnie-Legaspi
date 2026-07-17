@@ -3,7 +3,7 @@ import { profile } from '../content.ts';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-blue-900 transition-colors duration-300">
+    <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           <div className="md:col-span-2">
@@ -82,4 +82,5 @@ export default function Footer() {
     </footer>
   );
 }
+
 

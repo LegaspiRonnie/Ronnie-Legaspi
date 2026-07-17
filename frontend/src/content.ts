@@ -173,3 +173,4 @@ export function techIconUrl(name: string): string | null {
   return slug ? `https://cdn.simpleicons.org/${slug}` : null;
 }
 
+
