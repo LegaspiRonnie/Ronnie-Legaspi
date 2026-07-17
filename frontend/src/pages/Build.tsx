@@ -1,5 +1,4 @@
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
 import { Reveal, Stagger, StaggerItem } from '../components/Reveal.tsx';
 
 const steps = [
@@ -30,8 +29,6 @@ export default function Build() {
 
   return (
     <>
-      {/* <Breadcrumb items={[{ label: 'Build' }]} /> */}
-
       <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <Reveal effect="fade" className="max-w-xl mb-14">

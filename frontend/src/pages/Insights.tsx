@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
 import Badge from '../components/Badge.tsx';
 import EmptyState from '../components/EmptyState.tsx';
 import { posts, formatDate } from '../content.ts';
@@ -12,8 +11,6 @@ export default function Insights() {
 
   return (
     <>
-      {/* <Breadcrumb items={[{ label: 'Insights' }]} /> */}
-
       <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal effect="blur" className="max-w-xl mb-12">

@@ -1,5 +1,4 @@
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
 import Badge from '../components/Badge.tsx';
 import Experience from '../sections/Experience.tsx';
 import Team from '../sections/Team.tsx';

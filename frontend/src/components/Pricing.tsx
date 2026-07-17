@@ -1,4 +1,3 @@
-import { UnderConstructionModal } from "./UnderConstruction";
 import { useUnderConstruction } from '../hooks.ts';
 
 export default function Pricing() {

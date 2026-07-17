@@ -33,7 +33,7 @@ export default function Hero() {
       id="home"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300"
+      className="relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300 min-h-[100svh] flex items-center"
     >
       {/* Ambient gradient backdrop with parallax drift */}
       <motion.div
@@ -48,7 +48,7 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0 -z-10 transition-opacity duration-300"
       />
 
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-28 lg:py-40">
+      <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-14 lg:gap-16">
           <motion.div style={{ y: textY, opacity: textOpacity }} className="max-w-2xl">
            <Stagger stagger={0.12} delayChildren={0.05}>

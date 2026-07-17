@@ -1,5 +1,4 @@
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
 import { Reveal, Stagger, StaggerItem } from '../components/Reveal.tsx';
 import Pricing from '../components/Pricing.tsx';
 
@@ -36,8 +35,6 @@ export default function Services() {
 
   return (
     <>
-      {/* <Breadcrumb items={[{ label: 'Services' }]} /> */}
-
       <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="max-w-xl mb-14">

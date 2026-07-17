@@ -1,6 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
 import Badge from '../components/Badge.tsx';
 import ShareButtons from '../components/ShareButtons.tsx';
 import NotFound from './NotFound.tsx';
@@ -20,8 +19,6 @@ export default function InsightShow() {
 
   return (
     <>
-      {/* <Breadcrumb items={[{ label: 'Insights', to: '/insights' }, { label: limit(post.title, 40) }]} /> */}
-
       <article className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <Reveal effect="left">

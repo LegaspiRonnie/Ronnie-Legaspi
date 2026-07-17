@@ -12,45 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
     <script>
-      // Apply saved theme before first paint to avoid a flash
-      if (localStorage.getItem('theme') === 'dark') {
+      // Apply theme before first paint to avoid a flash. Dark is the
+      // default look for first-time visitors; an explicit "light" choice
+      // (saved by the navbar toggle) is the only thing that opts out.
+      if (localStorage.getItem('theme') !== 'light') {
         document.documentElement.classList.add('dark');
       }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'IBM Plex Sans', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
-      body { font-family: 'Inter', 'IBM Plex Sans', sans-serif; }
-
-      a, button, [role="button"] {
-        transition-property: color, background-color, border-color, opacity, transform, box-shadow;
-        transition-duration: 200ms;
-        transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      }
-
-      /* Pre-paint FOUC guard for scroll-reveal elements — full transition/
-         transform detail lives in src/styles/animations.css so there is a
-         single source of truth once React mounts. */
-      [data-reveal] { opacity: 0; }
-      @media (prefers-reduced-motion: reduce) {
-        [data-reveal] { opacity: 1; transform: none; transition: none; }
-      }
-    </style>
-    <script type="module" crossorigin src="/assets/index-pRkKswLO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CO_ogNUC.css">
+    <script type="module" crossorigin src="/assets/index-CJ3tYNqf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-b9lsipng.css">
   </head>
   <body class="bg-white dark:bg-gray-950 transition-colors duration-300">
     <div id="root"></div>
