@@ -1,5 +1,5 @@
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
+// import Breadcrumb from '../components/Breadcrumb.tsx';
 import { Reveal, Stagger, StaggerItem } from '../components/Reveal.tsx';
 
 // No certificates uploaded yet — these are intentionally-labeled

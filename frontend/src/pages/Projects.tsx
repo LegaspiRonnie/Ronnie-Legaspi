@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { usePageTitle } from '../hooks.ts';
-import Breadcrumb from '../components/Breadcrumb.tsx';
+// import Breadcrumb from '../components/Breadcrumb.tsx';
 import Badge from '../components/Badge.tsx';
 import Modal from '../components/Modal.tsx';
 import ShareButtons from '../components/ShareButtons.tsx';
