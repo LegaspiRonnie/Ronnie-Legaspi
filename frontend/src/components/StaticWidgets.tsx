@@ -22,7 +22,7 @@ export default function StaticWidgets() {
           whileHover={{ scale: 1.03, y: -2 }}
           whileTap={{ scale: 0.97 }}
           onClick={underConstruction}
-          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium shadow-lg hover:shadow-xl"
+          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium shadow-lg hover:shadow-xl"
         >
           <ChatIcon className="w-4 h-4 text-blue-700 dark:text-blue-400" />
           Feedback

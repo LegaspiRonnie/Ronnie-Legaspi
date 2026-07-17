@@ -14,7 +14,7 @@ export default function Pricing() {
           {/* Starter */}
           <div
             data-reveal="true"
-            className="relative bg-white dark:bg-gray-900 rounded-lg p-6 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-none border border-gray-200 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-900 in-view"
+            className="relative bg-white dark:bg-gray-950 rounded-lg p-6 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-none border border-gray-200 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-900 in-view"
             style={{ ['--reveal-delay' as any]: '0ms' }}
           >
             <h3 className="font-medium text-gray-900 dark:text-white mb-1">Starter</h3>
@@ -41,7 +41,7 @@ export default function Pricing() {
             <button
               type="button"
               onClick={underConstruction}
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-900"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-white dark:hover:bg-gray-950"
             >
               Request this package
             </button>
@@ -50,7 +50,7 @@ export default function Pricing() {
           {/* Professional */}
           <div
             data-reveal="true"
-            className="relative bg-white dark:bg-gray-900 rounded-lg p-6 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-none border-2 border-blue-600 ring-1 ring-blue-600/20 md:-translate-y-2 in-view"
+            className="relative bg-white dark:bg-gray-950 rounded-lg p-6 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-none border-2 border-blue-600 ring-1 ring-blue-600/20 md:-translate-y-2 in-view"
             style={{ ['--reveal-delay' as any]: '120ms' }}
           >
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-blue-700 text-white text-xs font-medium">
@@ -89,7 +89,7 @@ export default function Pricing() {
           {/* Custom / Retainer */}
           <div
             data-reveal="true"
-            className="relative bg-white dark:bg-gray-900 rounded-lg p-6 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-none border border-gray-200 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-900 in-view"
+            className="relative bg-white dark:bg-gray-950 rounded-lg p-6 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-gray-200/60 dark:hover:shadow-none border border-gray-200 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-900 in-view"
             style={{ ['--reveal-delay' as any]: '240ms' }}
           >
             <h3 className="font-medium text-gray-900 dark:text-white mb-1">Custom / Retainer</h3>
@@ -116,7 +116,7 @@ export default function Pricing() {
             <button
               type="button"
               onClick={underConstruction}
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-900"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-white dark:hover:bg-gray-950"
             >
               Request this package
             </button>

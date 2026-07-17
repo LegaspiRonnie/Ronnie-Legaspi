@@ -54,10 +54,10 @@ export default function ProjectCard({ project, iconPath }: ProjectCardProps) {
       style={{ rotateX, rotateY, transformPerspective: 1000 }}
       whileHover={{ y: -8 }}
       transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-      className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900 [transform-style:preserve-3d]"
+      className="group bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900 [transform-style:preserve-3d]"
     >
       {/* Main focused image */}
-      <div className="relative aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-gray-800">
+      <div className="relative aspect-[16/10] overflow-hidden bg-white dark:bg-gray-950">
         {total > 0 ? (
           <button
             type="button"
@@ -161,7 +161,7 @@ export default function ProjectCard({ project, iconPath }: ProjectCardProps) {
             <button
               type="button"
               onClick={() => setViewerOpen(true)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 hover:scale-[1.04] active:scale-[0.97]"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-gray-950 transition-all duration-300 hover:scale-[1.04] active:scale-[0.97]"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />

@@ -27,8 +27,8 @@ export default function Certificates() {
           <Stagger stagger={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {placeholders.map((cert, i) => (
               <StaggerItem key={i} effect="scale">
-                <div className="group bg-white dark:bg-gray-900 border border-dashed border-gray-300 dark:border-gray-700 rounded-2xl overflow-hidden transition-all duration-500 hover:border-blue-300 dark:hover:border-blue-800">
-                  <div className="aspect-4/3 flex items-center justify-center bg-gray-50 dark:bg-gray-900/60">
+                <div className="group bg-white dark:bg-gray-950 border border-dashed border-gray-300 dark:border-gray-700 rounded-2xl overflow-hidden transition-all duration-500 hover:border-blue-300 dark:hover:border-blue-800">
+                  <div className="aspect-4/3 flex items-center justify-center bg-white dark:bg-gray-950/60">
                     <svg
                       className="w-12 h-12 text-gray-300 dark:text-gray-700 transition-transform duration-500 group-hover:scale-110"
                       fill="none"

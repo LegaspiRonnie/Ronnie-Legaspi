@@ -48,7 +48,7 @@ export default function VideoShowcase() {
                 allowFullScreen
               />
             ) : (
-              <div className="w-full h-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
+              <div className="w-full h-full bg-white dark:bg-gray-950 flex items-center justify-center">
                 <svg className="w-16 h-16 text-blue-700 dark:text-blue-400 transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>

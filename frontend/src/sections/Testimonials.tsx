@@ -10,7 +10,7 @@ export default function Testimonials() {
         </Reveal>
 
         <Reveal effect="scale" className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-3 bg-white dark:bg-gray-900 border border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 text-center">
+          <div className="md:col-span-3 bg-white dark:bg-gray-950 border border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 text-center">
             <p className="text-sm text-gray-500 dark:text-gray-400">
               Testimonials coming soon — currently gathering feedback from recent collaborators.
             </p>

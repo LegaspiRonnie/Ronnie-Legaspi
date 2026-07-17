@@ -1,6 +1,6 @@
 const colors = {
   blue: 'bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400',
-  gray: 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
+  gray: 'bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300',
   green: 'bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400',
 } as const;
 

@@ -88,7 +88,7 @@ export default function Hero() {
                 </span>
               </MagneticButton>
               <MagneticButton href="#contact" strength={0.3}>
-                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium transition-all duration-300 hover:scale-[1.04] hover:bg-gray-50 dark:hover:bg-gray-900 hover:border-gray-300 dark:hover:border-gray-700">
+                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium transition-all duration-300 hover:scale-[1.04] hover:bg-white dark:hover:bg-gray-950 hover:border-gray-300 dark:hover:border-gray-700">
                   Get in touch
                 </span>
               </MagneticButton>
