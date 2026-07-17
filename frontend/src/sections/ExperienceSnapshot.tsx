@@ -10,7 +10,7 @@ export default function ExperienceSnapshot() {
   if (!current) return null;
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900/40 transition-colors duration-300">
+    <section className="py-20 bg-blue-100 dark:bg-gray-900/40 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <Reveal effect="left" className="grid grid-cols-1 lg:grid-cols-[1fr_auto] items-center gap-8">
           <motion.div
