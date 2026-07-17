@@ -11,7 +11,7 @@ export default function Insights() {
 
   return (
     <>
-      <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-blue-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal effect="blur" className="max-w-xl mb-12">
             <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ insights ]</p>
@@ -33,7 +33,7 @@ export default function Insights() {
                 <motion.div whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300, damping: 24 }}>
                   <Link
                     to={`/insights/${post.slug}`}
-                    className="group bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900"
+                    className="group bg-white dark:bg-blue-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900"
                   >
                     <div className="h-40 overflow-hidden">
                       {post.cover_image_url ? (
@@ -67,3 +67,4 @@ export default function Insights() {
     </>
   );
 }
+

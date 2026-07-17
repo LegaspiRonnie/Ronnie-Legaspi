@@ -172,3 +172,4 @@ export function techIconUrl(name: string): string | null {
   const slug = techSlugs[name.toLowerCase().trim()];
   return slug ? `https://cdn.simpleicons.org/${slug}` : null;
 }
+

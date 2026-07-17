@@ -18,7 +18,7 @@ interface BreadcrumbProps {
 // items: array of { label, to? } — the last item is the current page
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+    <nav aria-label="Breadcrumb" className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-blue-900">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-3">
         <ol className="flex items-center flex-wrap gap-2 text-sm">
           <li className="flex items-center gap-2">
@@ -42,3 +42,4 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
     </nav>
   );
 }
+

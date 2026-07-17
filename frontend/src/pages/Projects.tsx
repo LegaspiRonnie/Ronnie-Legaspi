@@ -29,7 +29,7 @@ export default function Projects() {
       className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105 active:scale-95 ${
         activeTag === tag
           ? 'bg-blue-700 text-white shadow-md shadow-blue-700/25'
-          : 'bg-white dark:bg-gray-950 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-950'
+          : 'bg-white dark:bg-blue-900 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-blue-900'
       }`}
     >
       {label}
@@ -42,7 +42,7 @@ export default function Projects() {
       onClick={() => setView(name)}
       className={`p-1.5 rounded-md transition-colors duration-300 ${
         view === name
-          ? 'bg-white dark:bg-gray-950 text-blue-700 dark:text-blue-400 shadow-sm'
+          ? 'bg-white dark:bg-blue-900 text-blue-700 dark:text-blue-400 shadow-sm'
           : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
       }`}
       aria-label={`${name} view`}
@@ -55,7 +55,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-blue-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="max-w-xl mb-10">
             <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ projects ]</p>
@@ -71,7 +71,7 @@ export default function Projects() {
               {projectTags.map((tag) => tagButton(tag, tag))}
             </div>
 
-            <div className="inline-flex items-center gap-1 p-1 rounded-lg bg-white dark:bg-gray-950 self-start">
+            <div className="inline-flex items-center gap-1 p-1 rounded-lg bg-white dark:bg-blue-900 self-start">
               {viewButton('grid', 'M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z')}
               {viewButton('list', 'M4 6h16M4 12h16M4 18h16')}
             </div>
@@ -91,7 +91,7 @@ export default function Projects() {
                   <motion.div
                     whileHover={{ y: -8 }}
                     transition={{ type: 'spring', stiffness: 300, damping: 24 }}
-                    className={`group bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900 ${
+                    className={`group bg-white dark:bg-blue-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900 ${
                       view === 'list' ? 'flex flex-col sm:flex-row' : 'flex flex-col'
                     }`}
                   >
@@ -159,3 +159,4 @@ export default function Projects() {
     </>
   );
 }
+

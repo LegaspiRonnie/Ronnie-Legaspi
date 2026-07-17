@@ -33,7 +33,7 @@ export default function Hero() {
       id="home"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300 min-h-svh flex items-center"
+      className="relative overflow-hidden bg-white dark:bg-blue-900 transition-colors duration-300 min-h-svh flex items-center"
     >
       {/* Ambient gradient backdrop with parallax drift */}
       <motion.div
@@ -88,7 +88,7 @@ export default function Hero() {
                 </span>
               </MagneticButton>
               <MagneticButton href="#contact" strength={0.3}>
-                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium transition-all duration-300 hover:scale-[1.04] hover:bg-white dark:hover:bg-gray-950 hover:border-gray-300 dark:hover:border-gray-700">
+                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 text-sm font-medium transition-all duration-300 hover:scale-[1.04] hover:bg-white dark:hover:bg-blue-900 hover:border-gray-300 dark:hover:border-gray-700">
                   Get in touch
                 </span>
               </MagneticButton>
@@ -128,3 +128,4 @@ export default function Hero() {
     </section>
   );
 }
+

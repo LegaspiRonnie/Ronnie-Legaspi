@@ -52,3 +52,4 @@ export default function MagneticButton({ children, className, href, onClick, str
     </div>
   );
 }
+

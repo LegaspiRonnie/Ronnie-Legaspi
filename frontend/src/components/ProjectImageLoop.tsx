@@ -35,3 +35,4 @@ export default function ProjectImageLoop({ images, alt }: ProjectImageLoopProps)
     </div>
   );
 }
+

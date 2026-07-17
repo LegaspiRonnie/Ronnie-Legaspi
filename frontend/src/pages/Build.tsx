@@ -29,7 +29,7 @@ export default function Build() {
 
   return (
     <>
-      <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-blue-900 transition-colors duration-300">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <Reveal effect="fade" className="max-w-xl mb-14">
             <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ how I build ]</p>
@@ -40,7 +40,7 @@ export default function Build() {
           </Reveal>
 
           <Stagger stagger={0.15} className="relative pl-8">
-            <div className="absolute left-2.75 top-1 bottom-1 w-px bg-gray-200 dark:bg-gray-950"></div>
+            <div className="absolute left-2.75 top-1 bottom-1 w-px bg-gray-200 dark:bg-blue-900"></div>
             {steps.map((step, i) => (
               <StaggerItem key={step.title} effect="left" className={`relative ${i === steps.length - 1 ? '' : 'pb-10'}`}>
                 <div className="absolute -left-8 top-0 w-6 h-6 rounded-full bg-blue-700 text-white text-xs font-semibold flex items-center justify-center border-2 border-white dark:border-gray-950">
@@ -56,3 +56,4 @@ export default function Build() {
     </>
   );
 }
+

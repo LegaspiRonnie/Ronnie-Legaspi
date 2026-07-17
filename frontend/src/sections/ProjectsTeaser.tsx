@@ -7,7 +7,7 @@ import { Reveal } from '../components/Reveal.tsx';
 // it just points at the dedicated /projects page.
 export default function ProjectsTeaser() {
   return (
-    <section className="py-24 bg-white dark:bg-gray-950 transition-colors duration-300">
+    <section className="py-24 bg-white dark:bg-blue-900 transition-colors duration-300">
       <Reveal effect="scale" className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
         <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-3">[ {projects.length} projects and counting ]</p>
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4">
@@ -31,3 +31,4 @@ export default function ProjectsTeaser() {
     </section>
   );
 }
+

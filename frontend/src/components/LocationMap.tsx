@@ -78,3 +78,4 @@ export default function LocationMap({ coordinates, label }: LocationMapProps) {
 
   return <div ref={mapEl} className="mt-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800" style={{ height: '200px' }}></div>;
 }
+

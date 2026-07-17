@@ -6,7 +6,7 @@ import { profile, coordinates } from '../content.ts';
 import { Reveal } from '../components/Reveal.tsx';
 
 const inputClass =
-  'w-full px-3.5 py-2.5 text-sm rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-gray-900 dark:text-white hover:border-gray-300 dark:hover:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300';
+  'w-full px-3.5 py-2.5 text-sm rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-blue-900 text-gray-900 dark:text-white hover:border-gray-300 dark:hover:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-300';
 
 export default function Contact() {
   const underConstruction = useUnderConstruction();
@@ -21,7 +21,7 @@ export default function Contact() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => underConstruction(e);
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-950/40 transition-colors duration-300">
+    <section id="contact" className="py-20 bg-white dark:bg-blue-900/40 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
         <Reveal effect="left">
           <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ contact ]</p>
@@ -66,7 +66,7 @@ export default function Contact() {
 
           <LocationMap coordinates={coordinates} label={profile.location} />
 
-          <div className="mt-4 flex items-center gap-4 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 bg-white dark:bg-gray-950 transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900">
+          <div className="mt-4 flex items-center gap-4 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 bg-white dark:bg-blue-900 transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900">
             <img src={qrCodeUrl} alt={`QR code to save ${profile.name}'s contact`} width="80" height="80" className="rounded-lg shrink-0" loading="lazy" />
             <div>
               <p className="text-sm font-medium text-gray-900 dark:text-white">Scan to save my contact</p>
@@ -106,3 +106,4 @@ export default function Contact() {
     </section>
   );
 }
+

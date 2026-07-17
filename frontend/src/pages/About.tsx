@@ -14,7 +14,7 @@ export default function About() {
     <>
       
 
-      <section className="py-16 bg-white dark:bg-gray-950 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-blue-900 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal effect="blur" className="grid grid-cols-1 lg:grid-cols-[auto_1fr] items-start gap-10 lg:gap-14">
             <img
@@ -53,7 +53,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 bg-white dark:bg-gray-950/40 transition-colors duration-300">
+      <section className="py-20 bg-white dark:bg-blue-900/40 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <Reveal className="max-w-xl mb-12">
             <p className="text-sm font-mono text-blue-700 dark:text-blue-400 mb-2">[ skills ]</p>
@@ -63,7 +63,7 @@ export default function About() {
           <Stagger stagger={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillGroups.map((group) => (
               <StaggerItem key={group.name} effect="right">
-                <div className="bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 h-full transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900">
+                <div className="bg-white dark:bg-blue-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 h-full transition-all duration-500 hover:shadow-lg hover:shadow-gray-200/60 dark:hover:shadow-none hover:border-blue-200 dark:hover:border-blue-900">
                   <h3 className="font-medium text-gray-900 dark:text-white mb-3">{group.name}</h3>
                   <div className="flex flex-wrap gap-1.5">
                     {group.skills.map((skill) => (
@@ -84,3 +84,4 @@ export default function About() {
     </>
   );
 }
+
