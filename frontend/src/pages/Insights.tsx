@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { usePageTitle } from '../hooks.ts';
-// import Breadcrumb from '../components/Breadcrumb.tsx';
+import Breadcrumb from '../components/Breadcrumb.tsx';
 import Badge from '../components/Badge.tsx';
 import EmptyState from '../components/EmptyState.tsx';
 import { posts, formatDate } from '../content.ts';

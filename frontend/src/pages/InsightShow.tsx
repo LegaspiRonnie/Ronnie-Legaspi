@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { usePageTitle } from '../hooks.ts';
-// import Breadcrumb from '../components/Breadcrumb.tsx';
+import Breadcrumb from '../components/Breadcrumb.tsx';
 import Badge from '../components/Badge.tsx';
 import ShareButtons from '../components/ShareButtons.tsx';
 import NotFound from './NotFound.tsx';
