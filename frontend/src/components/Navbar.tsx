@@ -36,10 +36,8 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  // Dark is the default for first-time visitors — only an explicit "light"
-  // choice (persisted below) opts back out, mirroring index.html's inline
-  // pre-paint script so there's no flash on first load.
-  const [dark, setDark] = useState(() => localStorage.getItem('theme') !== 'light');
+  // Start in light mode by default to avoid the blue-tinted dark palette.
+  const [dark, setDark] = useState(() => localStorage.getItem('theme') === 'dark');
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
